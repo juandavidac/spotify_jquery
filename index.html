@@ -8,13 +8,15 @@
   </head>
   <body>
     <div id="hd"><h1>Spotify preview</h1><input type="text" placeholder="Busca una canción o artista" id="input"></div>
+    <div class="content">
+    </div>
     <script id="songs-template" type="text/x-handlebars-template">
       <table>
       {{#each songs.tracks.items}}
       <tr>
         <td><img src="{{this.album.images.1.url}}" alt=""></td>
         <td>
-          <strong>{{this.name}}</strong> <br> <span>{{this.artists.0.name}} </span> <br> <br>
+          <strong>{{this.name}}</strong> <br> <span id="artist">{{this.artists.0.name}} </span> <br> <br>
           <audio controls="controls"><source src="{{this.preview_url}}"></audio>
         </td>
       </tr>
