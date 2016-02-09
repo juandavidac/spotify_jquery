@@ -1,0 +1,33 @@
+//- //output:index.html
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet", href="css/style.css")    
+  body
+    div
+      h1 Spotify preview
+      input(type="text" placeholder="Busca una canción o artista" id="input")
+      script(id="template" type="text/x-handlebars-template")
+        table
+          tbody
+            {{#each countries}}          
+            tr
+              td 
+                img(src="{{this.flag_url}}", alt="")
+              td  {{this.name}}
+                  br 
+                  | 
+                  br 
+                  | 
+                  audio(src="")
+            {{/each}}          
+      
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js")
+    script(src="js/app.js")
+  
+  
+    
+  

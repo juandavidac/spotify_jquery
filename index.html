@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div id="hd"><h1>Spotify preview</h1><input type="text" placeholder="Busca una canción o artista" id="input"></div>
+    <script id="songs-template" type="text/x-handlebars-template">
+      <table>
+      {{#each songs.tracks.items}}
+      <tr>
+        <td><img src="{{this.album.images.1.url}}" alt=""></td>
+        <td>
+          <strong>{{this.name}}</strong> <br> <span>{{this.artists.0.name}} </span> <br> <br>
+          <audio controls="controls"><source src="{{this.preview_url}}"></audio>
+        </td>
+      </tr>
+      {{/each}}
+      </table>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
