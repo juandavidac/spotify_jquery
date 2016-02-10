@@ -22,28 +22,31 @@ div {
   /*top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);*/
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   margin-left: auto;
   margin-right: auto;
 }
 
 table {
   background: white;
-  border-radius: 10px;
-  margin-top: 40px;
-  padding: 0px;
+  /*border-radius: 10px;*/
+  /*margin-top: 10px;*/
+  /*padding: 0px;*/
   /*padding: 25px;*/
   margin-left: auto;
   margin-right: auto;
+  border-spacing: 0 5px;
 }
 
 img {
-  width: 125px;
-  height: 125px;
+  width:100%;
+  height:auto;
+  /*width: 127px;
+  height: 137px;*/
 }
 
 #hd {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 td {
@@ -52,4 +55,17 @@ td {
 
 span {
   font-size: 15px;
+}
+
+.fit {
+  /*background: #d4d4c7;*/
+  background: #eeeee8;
+  border: 0.05px solid;
+  outline: thin solid;
+  outline-color: #cbcbbc;
+
+}
+
+tr {
+  margin: 50px;
 }
