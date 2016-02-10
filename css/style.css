@@ -35,11 +35,14 @@ table {
   /*padding: 25px;*/
   margin-left: auto;
   margin-right: auto;
+  border-spacing: 0 5px;
 }
 
 img {
-  width: 125px;
-  height: 125px;
+  width:100%;
+  height:auto;
+  /*width: 127px;
+  height: 137px;*/
 }
 
 #hd {
@@ -55,5 +58,14 @@ span {
 }
 
 .fit {
-  background: #f5f5f2;
+  /*background: #d4d4c7;*/
+  background: #eeeee8;
+  border: 0.05px solid;
+  outline: thin solid;
+  outline-color: #cbcbbc;
+
+}
+
+tr {
+  margin: 50px;
 }
