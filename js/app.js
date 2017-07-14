@@ -9,7 +9,7 @@ $(document).ready(function(){
       type: 'GET',
       dataType: 'json',
       headers: {
-        'Authorization': 'Bearer' + token
+        'Authorization': 'Bearer ' + token
       },
       success: function(data){
         $('.content').html(template({ songs: data }));
