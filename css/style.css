@@ -21,6 +21,10 @@ button#search {
   margin: 0 auto;
 }
 
+.warning {
+  color: red;
+}
+
 div {
   background: white;
   max-width: 435px;
